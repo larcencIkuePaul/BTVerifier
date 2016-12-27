@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">CR68K BT Verifier</string>
+    <string name="btn_scan">SCAN</string>
+    <string name="btn_read_characteristic">READ CHARACTERISTIC</string>
+    <string name="btn_stop_scan">STOP SCAN</string>
+    <string name="btn_stop_amba_session">STOP AMBA SESSION</string>
+    <string name="btn_close_app">CLOSE APP</string>
+    <string name="btn_close_gatt_connection">STOP GATT CONNECTION</string>
+    <string name="btn_get_connection_state">GET CONNECTION STATE</string>
+    <string name="btn_discovery_service">DISCOVERY SERVICES</string>
+    <string name="btn_create_amba_session">CREATE AMBA SESSION</string>
+    <string name="btn_read_amba_response">READ AMBA RESPONSE</string>
+    <string name="btn_disconnect_amba_session">DISCONNECT AMBA SESSION</string>
+    <string name="btn_open_pushcam">OPEN PUSHCAM</string>
+    <string name="btn_check_thread_state">CHECK THREAD STATE</string>
+    <string name="btn_check_received_message">CHECK RECEIVED MESSAGE</string>
+
+    <string name="toast_stop_scanning_and_select_device_again">Stop scanning&#8230;\nPlease select the device again</string>
+
+    <string name="switch_title_gatt_connection_state">CONN STATE</string>
+    <string name="text_state_conn">CONN</string>
+    <string name="text_state_disconn">DISCONN</string>
+    <string name="switch_title_scan_state">SCAN STATE</string>
+    <string name="text_state_scanning">SCANNING</string>
+    <string name="text_state_scan_finish">FINISH</string>
+    <string name="switch_title_service_discovery_state">GATT SERVICE</string>
+    <string name="text_state_service_none">NONE</string>
+    <string name="text_state_service_ok">OK</string>
+
+    <string name="text_title_amba_sess_token_number">AMBA TOKEN</string>
+    <string name="text_title_gatt_retry_count">GATT RETRY</string>
+    <string name="text_title_issue_retry_count">ISSUE RETRY</string>
+
+    <string name="dialog_title">Verify Result</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_disconn">DISCONNECT</string>
+
+    <string name="listview_title_device_list">DEVICE LIST</string>
+    <string name="scrollview_title_log">LOG</string>
+</resources>

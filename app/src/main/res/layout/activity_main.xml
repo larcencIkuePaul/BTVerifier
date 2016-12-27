@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainUi">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout">
+        <Switch
+            android:id="@+id/switchConnState"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="@string/switch_title_gatt_connection_state"
+            android:clickable="false"
+            android:checked="false"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textConnState"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/text_state_disconn"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <Switch
+            android:id="@+id/switchScanState"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/switch_title_scan_state"
+            android:clickable="false"
+            android:checked="false"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textScanState"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="@string/text_state_scan_finish"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <LinearLayout
+            android:id="@+id/layoutProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2sp">
+            <ProgressBar
+                android:id="@+id/progressBarScan"
+                android:layout_width="12sp"
+                android:layout_height="12sp" />
+        </LinearLayout>
+        <Switch
+            android:id="@+id/switchServiceDiscoveryState"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="@string/switch_title_service_discovery_state"
+            android:clickable="false"
+            android:checked="false"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textServiceDiscoveryState"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="@string/text_state_service_none"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textAmbaSessTokenNumberTitle"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="@string/text_title_amba_sess_token_number"
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:textColor="#00FF00" />
+        <TextView
+            android:id="@+id/textAmbaSessTokenNumberValue"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="0"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textConnRetryCountTitle"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="@string/text_title_gatt_retry_count"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textConnRetryCountValue"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="0"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textIssueRetryCountTitle"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:text="@string/text_title_issue_retry_count"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+        <TextView
+            android:id="@+id/textIssueRetryCountValue"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:text="0"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp">
+        <TextView
+            android:id="@+id/textDeviceListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listview_title_device_list"
+            android:textColor="#ffff00"
+            android:layout_marginBottom="2sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:id="@+id/viewDeviceListBorder"
+            android:background="#1d2023"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutDeviceList"
+            android:layout_marginBottom="2sp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:id="@+id/listView" />
+            <LinearLayout
+                android:id="@+id/layoutDeviceListProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:gravity="center">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/textShowLogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_title_log"
+            android:textColor="#ff5e00"
+            android:layout_marginBottom="2sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:id="@+id/viewLogBorder"
+            android:background="#1d2023"/>
+        <ScrollView
+            android:id="@+id/viewShowLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textShowLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
